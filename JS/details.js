@@ -8,7 +8,8 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 const url = "https://thronesapi.com/api/v2/Characters/" + id;
-console.log(id)
+
+// console.log(id)
 
 async function getCharacter() {
 
@@ -16,9 +17,9 @@ async function getCharacter() {
         const response = await fetch(url);
         const data = await response.json();
 
-        console.log(data);
+       // console.log(data);
 
-        makeHTML(data);
+        CreateContent(data);
     }
 
     catch(error) {
@@ -30,10 +31,10 @@ async function getCharacter() {
 
 getCharacter();
 
-function makeHTML(data) {
+function CreateContent(data) {
     character.innerHTML = `<h1>${data.fullName}</h1>
     <div><img src="${data.imageUrl}" alt="Image of ${data.fullName}"></div>
     <h2>Family: ${data.family}</h2>
     <h2>Title: ${data.title}</h2>`
-    htmlTitle.innerHTML = `About ${data.fullName}`
+    htmlTitle.innerHTML = `About: ${data.fullName}`
 }
