@@ -22,9 +22,22 @@ The first task is to fetch an array of results to the index.html page. To make t
 ### Details Page
 
 My method is quite similiar to the Index page, however in this case I need to retrieve id parameters from the query string.
-I went back to index.js to add a href value in an anchor tag, so I can retrieve it from the query string and use it in the details page. When creating the details of each character, I made a similar function as in the index.js witch backticks and InnerHtml. I also used this method to dynamically change the HTML Head Title.
+I went back to index.js to add a href value in an anchor tag, so I can retrieve it from the query string and use it in the details page. When creating the details of each character, I made a similar function as in the index.js witch backticks and InnerHtml. I also used this method to dynamically change the HTML document head title.
 
 ### Contact Form
 
+The form on the contact page has the following reqiurements:
+
+- Name can´t be blank
+- Email must be formatted correctly
+- Address must have a minimium of 25 characters
+- Subject must have a minimum of 10 characters
+
+This was the most time consuming part of the project, becuase I experimented with different methods to validate the form with javascript. I did a lot of reaserach, trying and failing until I finally made it.
+
 Resources: https://www.youtube.com/watch?v=zNIfyHbVbYw (JS Form Validation - Monsterlessons academy)
 https://thronesapi.com/ (The API)
+
+#### Netlify Link:
+
+https://musical-halva-e15069.netlify.app/index.html

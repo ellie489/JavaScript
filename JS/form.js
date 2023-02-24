@@ -24,6 +24,7 @@ const displayError = (input, error) => {
 const removeError = (input) => {
 
     input.nextElementSibling.innerText = "";
+    input.nextElementSibling.classList.remove("form-error");
 
 }
 
@@ -36,7 +37,6 @@ const validateInputs = () => {
     const subjectValue = subject.value.trim()
     const success = document.querySelector("#form-h1");
 
-
     console.log("Validate", nameValue, emailValue, addressValue, subjectValue);
 
 
@@ -46,6 +46,7 @@ const validateInputs = () => {
         }
         else {
             removeError(fullName);
+
         }
 
         if (!validateEmail(emailValue)) {
@@ -53,7 +54,7 @@ const validateInputs = () => {
             displayError(email, "Your Email address is incorrect");
         }
         else {
-            removeError(email);
+            removeError(email)
         }
 
         if (!addressValue || addressValue.length < 25) {
@@ -68,20 +69,26 @@ const validateInputs = () => {
         }
         else {
             removeError(subject);
+            success.innerHTML = "";
+        }
+
+        // Success validation
+
+        if (nameValue && validateEmail(emailValue) && addressValue && subjectValue) {
+            success.innerHTML = "Success!";
+        }
+        else {
+            success.innerHTML = "";
         }
 
 }
 
-// IF SUCCESS, ADD HTML TO .form-h1 
 
 form.addEventListener("submit", (event) => {
+
     event.preventDefault();
+
     validateInputs();
 
-    const success = document.querySelector("#form-h1");
-
-    if (validateInputs === true) {
-        success.innerHTML = "Success!";
-    }
 });
 
