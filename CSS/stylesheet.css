@@ -1,0 +1,154 @@
+body {
+    background-color: #102321;
+    color: #a9cfc1;
+    font-family: fantasy, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    align-items: center;
+  }  
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+nav a, a {
+    color: #a9cfc1;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    margin: 50px;
+    padding: 20px;
+}
+
+a {
+    font-size: 1em;
+}
+
+nav * {
+    display: inline-block;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #a9cfc1;
+    margin: 30px 0px;
+}
+
+.get-error {
+    border: 2px solid #6d1616;
+    border-radius: 10px;
+    padding: 1em;
+    color: #FEA9A9;
+    max-width: 500px;
+}
+
+.results, main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.result {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    height: 300px;
+    width: 300px;
+    border: 2px solid #a9cfc1;
+    border-radius: 10px;
+}
+
+img {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    
+}
+
+.result h3 {
+    position: absolute;
+    background-color:#102321;
+    padding: 0px 10px;
+    margin-top: 300px;
+    border-radius: 5px;
+}
+
+.result:hover {
+    background-color: #a9cfc1;
+    transition: 0.5s;
+    font-size: 1.3em;
+}
+
+nav a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+.loader {
+    border: 0.5rem dotted #49AD99;
+    border-bottom: 0.5rem dotted #8deac8;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* CONTACT PAGE */
+
+.contact-form {
+    max-width: 300px;
+    margin: auto;    
+    padding: 30px;
+    justify-content: center;
+}
+
+input, .contact-form button, textarea {
+    border: 2px solid #f0f0f0;
+    border-radius: 8px;
+    font-size: 1em;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 150px;
+}
+
+.form-error {
+   color: #FEA9A9;
+}
+
+/* DETAILS PAGE */
+
+.character-details {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 50px;
+    border-radius: 10px;
+    border: 2px dashed #a9cfc1;
+}
+
+.details img {
+    width: 300px;
+}
