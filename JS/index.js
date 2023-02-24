@@ -10,7 +10,7 @@ async function getCharacters() {
 
             characterCard.innerHTML = "";
 
-            // console.log(characters);
+            // console.log(characters); 
 
 
             for (let i = 0; i < characters.length; i++) {
