@@ -37,8 +37,9 @@ This was the most time consuming part of the project, becuase I experimented wit
 
 ### Resources
 
-The API: https://thronesapi.com/
-JS Form Validation - Monsterlessons academy: https://www.youtube.com/watch?v=zNIfyHbVbYw
+#### The API: https://thronesapi.com/
+
+#### JS Form Validation - Monsterlessons academy: https://www.youtube.com/watch?v=zNIfyHbVbYw
 
 #### Netlify Link:
 
