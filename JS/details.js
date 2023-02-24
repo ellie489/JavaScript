@@ -1,8 +1,6 @@
 const character = document.querySelector(".character-details");
 const htmlTitle = document.querySelector(".title");
 
-
-
 const queryString = document.location.search;
 
 const params = new URLSearchParams(queryString);
