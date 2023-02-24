@@ -33,10 +33,12 @@ The form on the contact page has the following reqiurements:
 - Address must have a minimium of 25 characters
 - Subject must have a minimum of 10 characters
 
-This was the most time consuming part of the project, becuase I experimented with different methods to validate the form with javascript. I did a lot of reaserach, trying and failing until I finally made it.
+This was the most time consuming part of the project, becuase I experimented with different methods to validate the form with javascript. I did a lot of reserach, trying and failing until I finally made it. I used if statements to validate each input,and I also made reusable functions to show error and remove the error message.
 
-Resources: https://www.youtube.com/watch?v=zNIfyHbVbYw (JS Form Validation - Monsterlessons academy)
-https://thronesapi.com/ (The API)
+### Resources
+
+The API: https://thronesapi.com/
+JS Form Validation - Monsterlessons academy: https://www.youtube.com/watch?v=zNIfyHbVbYw
 
 #### Netlify Link:
 

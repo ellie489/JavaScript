@@ -74,7 +74,7 @@ const validateInputs = () => {
 
         // Success validation
 
-        if (nameValue && validateEmail(emailValue) && addressValue && subjectValue) {
+        if (nameValue && validateEmail(emailValue) && addressValue.length >=25 && subjectValue.length >= 10) {
             success.innerHTML = "Success!";
         }
         else {
